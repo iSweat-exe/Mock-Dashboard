@@ -7,12 +7,144 @@
 
     <!--* Css -->
     <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--* Gsap -->
 </head>
 <body>
+    <!-- SideBar left side -->
+    <header>
+        <div class="sidebar">
+            <div class="sidebar_logo">
+                <i class="fa-solid fa-building"></i>
+                <h3>Dashboard</h3>
+                <div class="sidebar_logo_cross">
+                    <i class="fa-solid fa-xmark" onclick="SidebarClose()"></i>
+                </div>
+            </div>
+            <ul>
+                <p>Management</p>
+                <li><i class="fa-solid fa-building ico"></i><a href="#">Dashboard</a></li>
+                <li><i class="fa-solid fa-server"></i><a href="#">Servers</a></li>
+                <li><i class="fa-solid fa-globe"></i><a href="#">Deploys</a></li>
+                <li><i class="fa-solid fa-share"></i><a href="#">Portal</a></li>
+            </ul>
+            <ul>
+                <p>Account</p>
+                <li><i class="fa-solid fa-lock"></i><a href="#">Credentials</a></li>
+                <li><i class="fa-solid fa-arrow-right-from-bracket"></i><a href="#">Logout</a></li>
+            </ul>
+            <div class="sidebar_account">
+                <div class="sidebar_account_img">
+                    <!-- <img src="Import/profil.png" alt="user image" class="img_user"> -->
+                </div>
+                <div class="sidebar_account_text">
+                    <p>@isweat</p>
+                    <p>Paid Plan | $199/month</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-mobile">
+            <i class="fa-solid fa-bars" onclick="NavbarOpenMobile()"></i>
+        </div>
+    </header>
+    
+    <main>
+        <div class="text-content-1">
+            <h1>Hello iSweat !</h1>
+            <h2>Welcome to the Dashboard.</h2>
+            <p>Discover Resources, News & Recommendations all in one place - your e-commerce boutique dashboard.</p>
+        </div>
+
+        <section class="Statistics-container">
+
+            <div class="Statistics-content-1">
+                <h1 class="Statistics-title">Real-time Statistics</h1>
+                <p>This month (May 05)</p>
+
+                <div class="Statistics-info-container">
+                    <div class="statistics-info-1 statistics-info">
+                        <h2 class="green">+700</h2>
+                        <p>Visitors</p>
+                    </div>
+
+                    <div class="statistics-info-2 statistics-info">
+                        <h2 class="green">+230</h2>
+                        <p>Orders</p>
+                    </div>
+
+                    <div class="statistics-info-3 statistics-info">
+                        <h2 class="green">+1847 $</h2>
+                        <p>Revenue (profit)</p>
+                    </div>
+
+                    <div class="statistics-info-4 statistics-info">
+                        <h2 class="red">+2</h2>
+                        <p>Product Returns</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Statistics-content-2">
+                <h1 class="Statistics-title">Your e-commerce store</h1>
+                <p>Last month (April)</p>
+
+                <div class="Statistics-info-container">
+                    <div class="statistics-info-1 statistics-info">
+                        <h2 class="green">+23k</h2>
+                        <p>Visitors</p>
+                    </div>
+
+                    <div class="statistics-info-2 statistics-info">
+                        <h2 class="green">+7.3k</h2>
+                        <p>Orders</p>
+                    </div>
+
+                    <div class="statistics-info-3 statistics-info">
+                        <h2 class="green">+29.7k $</h2>
+                        <p>Revenue (profit)</p>
+                    </div>
+
+                    <div class="statistics-info-4 statistics-info">
+                        <h2 class="red">+124</h2>
+                        <p>Product Returns</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Statistics-content-3">
+                <h1 class="Statistics-title">Your e-commerce store</h1>
+                <p>Previous month (March)</p>
+
+                <div class="Statistics-info-container">
+                    <div class="statistics-info-1 statistics-info">
+                        <h2 class="green">+18k</h2>
+                        <p>Visitors</p>
+                    </div>
+
+                    <div class="statistics-info-2 statistics-info">
+                        <h2 class="green">+5.7k</h2>
+                        <p>Orders</p>
+                    </div>
+
+                    <div class="statistics-info-3 statistics-info">
+                        <h2 class="green">+21.3k $</h2>
+                        <p>Revenue (profit)</p>
+                    </div>
+
+                    <div class="statistics-info-4 statistics-info">
+                        <h2 class="red">+83</h2>
+                        <p>Product Returns</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     
     <!-- Script -->
+
+    <script src="Javascript/navbar.js"></script>
     
 </body>
 </html>
